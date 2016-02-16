@@ -2,18 +2,13 @@ import React from 'react';
 
 class News extends React.Component {
 	
-	constructor(props) {
-		super(props);
-
-		this.state = {
-			newsData: this.props.newsData
-		}
-
+	constructor() {
+		super();
 	}
 
 	render() {
 
-		let newsArticles = this.state.newsData.map(function(n) {
+		let newsArticles = this.props.newsData.map(function(n) {
 
 			return ( 
 					<blockquote>
